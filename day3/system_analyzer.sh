@@ -15,7 +15,7 @@ analyze_log()
 	else
 		((error_count++))
 	fi
-}
+OA}
 
 check_status()
 {
