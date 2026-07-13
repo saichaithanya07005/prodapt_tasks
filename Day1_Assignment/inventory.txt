@@ -1,6 +1,0 @@
-101,Keyboard,25,800
-102,Mouse,8,500
-103,Monitor,15,12000
-104,Printer,3,8500
-105,Speaker,20,2500
-106,USB,5,600

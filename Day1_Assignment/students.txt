@@ -1,6 +1,0 @@
-101,Siva,85
-102,Ravi,42
-103,Priya,95
-104,Kiran,30
-105,Anitha,78
-106,Ramesh,55
