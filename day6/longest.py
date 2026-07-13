@@ -1,9 +1,14 @@
+import time
 sentence = input("Enter a sentence: ")
+start_time = time.perf_counter()
 words = sentence.split()
 longest_word = ""
 for word in words:
     if len(word) > len(longest_word):
         longest_word = word
+end_time = time.perf_counter()
+print("The longest word is:", longest_word)
+print("Execution time:", end_time - start_time)
 print("The longest word is:", longest_word)
 
 """we can use this also to find the longest word in a sentence. The code takes a sentence as input, splits it into words, and then iterates through each word to find the longest one. Finally, it prints the longest word found in the sentence.
