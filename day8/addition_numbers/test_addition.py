@@ -1,4 +1,4 @@
-from addition import add, subtract, multiply, divide
+from day8.addition_numbers.addition import add, subtract, multiply, divide
 
 def test_add_positive_numbers():
     assert add(2, 3) == 5
