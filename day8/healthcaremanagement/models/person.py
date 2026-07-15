@@ -7,4 +7,8 @@ class Person:
         self.age = age
 
     def display_info(self):
-        print(f"ID: {self.id}, Name: {self.name}, Age: {self.age}")
+        return {
+            "ID": self.id,
+            "Name": self.name,
+            "Age": self.age,
+        }
