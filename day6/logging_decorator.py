@@ -1,9 +1,12 @@
+# Logging Decorator
+
 def logging_decorator(func):
     def wrapper():
-        print("Before calling the function")
+        print("Before calling the function.")
         func()
         print("After calling the function.")
-        return wrapper
+    return wrapper
+
 @logging_decorator
 def say_hello():
     print("Hello!")

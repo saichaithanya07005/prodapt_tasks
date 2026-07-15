@@ -1,15 +1,55 @@
-import time
-sentence = input("Enter a sentence: ")
-start_time = time.perf_counter()
-words = sentence.split()
-longest_word = ""
-for word in words:
-    if len(word) > len(longest_word):
-        longest_word = word
-end_time = time.perf_counter()
-print("The longest word is:", longest_word)
-print("Execution time:", end_time - start_time)
-print("The longest word is:", longest_word)
+'''
+Write a Python program to find the longest word in a sentence using a function.
+Requirements:
+Create a function named find_longest_word().
+Accept a sentence from the user.
+Split the sentence into words.
+Find the word with the maximum length.
+Return the longest word.
+Display the result.
 
-"""we can use this also to find the longest word in a sentence. The code takes a sentence as input, splits it into words, and then iterates through each word to find the longest one. Finally, it prints the longest word found in the sentence.
-longest_word = max(words, key=len)"""
+Expected Output 1
+Enter a sentence: Python is an amazing programming language
+Longest word: programming
+
+'''
+
+# Function to find the longest word
+import time
+def find_longest_word(sentence):
+    words = sentence.split()
+    longest = ""
+
+    for word in words:
+        if len(word) > len(longest):
+            longest = word
+
+    return longest
+
+# User Input
+text = input("Enter a sentence: ")
+
+#start time
+start_time = time.perf_counter() #high resolution timer better than time.time() for measuring short durations
+
+# Function Call
+result = find_longest_word(text)
+print("Longest word:", result)
+
+#end time
+end_time = time.perf_counter()
+#execution time
+execution_time = end_time - start_time
+print(f"Execution time: {execution_time:.6f} seconds")
+
+# #different approach
+# # Function to find the longest word
+
+# def find_longest_word(sentence):
+#     return max(sentence.split(), key=len)
+
+# # User Input
+# text = input("Enter a sentence: ")
+
+# # Function Call
+# print("Longest word:", find_longest_word(text))
