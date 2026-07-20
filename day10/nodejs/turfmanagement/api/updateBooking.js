@@ -1,30 +1,3 @@
-
-// export async function updateBooking(id, booking) {
-
-//     try {
-
-//         const response = await fetch(`${BASE_URL}/${id}`, {
-
-//             method: "PUT",
-
-//             headers: {
-//                 "Content-Type": "application/json"
-//             },
-
-//             body: JSON.stringify(booking)
-
-//         });
-
-//         return await response.json();
-
-//     } catch (error) {
-
-//         console.log(error.message);
-
-//     }
-
-// }
-
 const BASE_URL = "http://localhost:3000/bookings";
 
 export async function updateBooking(id, booking) {
